@@ -1,4 +1,4 @@
-#Write a Bash script based on the following requirements:
+# Write a Bash script based on the following requirements:
 
 Creates 25 empty (0 KB) files. (Hint: Use the touch command.)
 The file names should be <yourName><number>, <yourName><number+1>, <yourName><number+2>, and so on.
