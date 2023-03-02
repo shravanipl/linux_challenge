@@ -1,6 +1,5 @@
 #!/bin/bash
-#This is a script for creating a batch of 25 files
-
+# This is a script for creating a batch of 25 files
 read -p "Please enter your name for file creation: " name
 if test -z "$name"
 then
@@ -12,7 +11,7 @@ fi
 startindex=$(ls -lfru | grep $name | tail -n 1 | sed s/$name//)
 test -z $startindex&&startindex=1||startindex 
 
-#Create a batch of 25 files by appending name and increasing numbers
+# Create a batch of 25 files by appending name and increasing numbers
 for((counter=startindex;counter<startindex+25;counter++));
 do
         touch $name$counter
