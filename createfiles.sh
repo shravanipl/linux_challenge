@@ -8,11 +8,11 @@ then
    exit 1
 fi
 
-# Search and extract the highest number from a file 
+# Search and extract the highest number from the list of matching filename 
 startindex=$(ls -lfru | grep $name | tail -n 1 | sed s/$name//)
 test -z $startindex&&startindex=1||startindex 
 
-#Creating a batch of 25 files by appending name and increasing numbers
+#Create a batch of 25 files by appending name and increasing numbers
 for((counter=startindex;counter<startindex+25;counter++));
 do
         touch $name$counter
